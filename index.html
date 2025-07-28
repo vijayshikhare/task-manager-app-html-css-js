@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App</title>
+    <link rel="stylesheet" href="e-63.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">TaskManager</div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#tasks">Tasks</a><div class="hover-underline"></div></li>
+                <li><a href="#analytics">Analytics</a><div class="hover-underline"></div></li>
+                <li><a href="#features">Features</a><div class="hover-underline"></div></li>
+                <li><a href="#pricing">Pricing</a><div class="hover-underline"></div></li>
+                <li><a href="#testimonials">Testimonials</a><div class="hover-underline"></div></li>
+                <li><a href="#about">About</a><div class="hover-underline"></div></li>
+                <li><a href="#contact">Contact</a><div class="hover-underline"></div></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Organize Your Tasks, Boost Your Productivity</h1>
+            <p>Manage your tasks efficiently with reminders, priorities, and analytics.</p>
+            <button class="cta-button" id="getStarted">Get Started</button>
+        </div>
+    </section>
+    
+    <section class="container" id="tasks">
+        <h2 style="padding-bottom: 15px;">Manage Your Tasks</h2>
+        <div class="task-input">
+            <input type="text" id="task" placeholder="Enter task...">
+            <input type="text" id="category" placeholder="Enter category...">
+            <input type="datetime-local" id="deadline">
+            <select id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="addTask">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+        <div class="task-stats">
+            <p>Total Tasks: <span id="totalTasks">0</span></p>
+            <p>Completed Tasks: <span id="completedTasks">0</span></p>
+        </div>
+    </section>
+    
+    <section id="analytics" class="container">
+        <h2 style="padding-bottom: 15px;">Task Analytics</h2>
+        <div class="analytics-grid">
+            <p>Tasks Completed: <span id="tasksCompleted">0</span></p>
+            <p>Pending Tasks: <span id="tasksPending">0</span></p>
+            <p>High Priority Tasks: <span id="highPriorityTasks">0</span></p>
+        </div>
+    </section>
+    
+    <section id="features" class="container">
+        <h2 style="padding-bottom: 15px;">Key Features</h2>
+        <ul>
+            <li>Easy Task Management</li>
+            <li>Task Prioritization</li>
+            <li>Deadline Reminders</li>
+            <li>Analytics and Reports</li>
+            <li>Mobile & Desktop Compatible</li>
+        </ul>
+    </section>
+    
+    <section id="pricing" class="container">
+        <h2 style="padding-bottom: 15px;">Pricing Plans</h2>
+        <div class="pricing-cards">
+            <div class="card">
+                <h3>Free Plan</h3>
+                <p>Basic task management features</p>
+                <button>Sign Up</button>
+            </div>
+            <div class="card premium">
+                <h3>Premium Plan</h3>
+                <p>Advanced analytics & unlimited tasks</p>
+                <button>Upgrade</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="testimonials" class="container">
+        <h2 style="padding-bottom: 15px;">User Testimonials</h2>
+        <blockquote>"This app has helped me stay on top of my tasks!" - Vijay Kumar</blockquote>
+        <blockquote>"A must-have for anyone looking to be more productive!" - Trivedi</blockquote>
+    </section>
+    
+    <section id="about" class="container">
+        <h2 style="padding-bottom: 15px;">About Us</h2>
+        <p>TaskManager is dedicated to helping users stay organized and productive.</p>
+    </section>
+    
+    <section id="contact" class="container">
+        <h2 style="padding-bottom: 15px;">Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 TaskManager. All Rights Reserved. <br> <small>developed by Vijay Shikhare</small></p>
+    </footer>
+    
+    <script src="e-63.js"></script>
+</body>
+</html>
