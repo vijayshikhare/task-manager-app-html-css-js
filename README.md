@@ -12,8 +12,9 @@ A fully responsive **Task Management Web App** built with **HTML5**, **CSS3**, a
 
 ## 📸 Preview
 
-![Task Manager App](https://github.com/user-attachments/assets/eed8a58e-7677-4638-871a-99db8970c421)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/eed8a58e-7677-4638-871a-99db8970c421" alt="Task Manager App Preview" width="800">
+</p>
 
 ---
 
